@@ -3,8 +3,10 @@ export function Unused() {
     className: "some-class",
   }
 
+  // The addition of destructured props _and_ the use of `key` is required to
+  // trigger the bug
   return (
-    <div className={classes.className}>
+    <div {...classes} key="x">
       This component isn't even used, but when we destructure classes it causes
       the build to fail. And if we happen to set `client:only="react"` in our
       Astro file, it also causes the render to fail for this island.
