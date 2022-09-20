@@ -1,0 +1,15 @@
+{
+  "name": "frontend",
+  "private": true,
+  "author": "Trilliant",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w packages/astro-site",
+    "dev": "npm run dev -w packages/astro-site"
+  },
+  "devDependencies": {
+    "typescript": "4.8.3"
+  }
+}

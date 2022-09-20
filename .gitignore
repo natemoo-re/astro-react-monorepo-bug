@@ -1,0 +1,22 @@
+.DS_Store
+node_modules
+.ignore
+*.ignore.*
+*.ignore/
+
+.env
+.vscode/
+
+deploy-feature.config.ts
+
+###### Arbitrary public storage files (See root README for details)
+#
+**/public/data/storage/*
+#
+# Anything you need to keep locally, but not upload. Documentation, etc
+#
+!**/public/data/storage/.keep
+!**/public/data/storage/*.keep.*
+!**/public/data/storage/README.md
+#
+######
